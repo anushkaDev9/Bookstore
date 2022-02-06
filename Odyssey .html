@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>The Odysseys</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <style>
+           div{
+    width: 40%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 90px;
+  float: left;
+}
+#aboutbook{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+#aboutauthor{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:40% ;
+}
+#Order{
+  margin-top:0%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+        </style>
+    </head>
+    <body style='background-color: white;'>
+      <h2 style="text-align: center; font-size: 40px; padding-top: 5%;">BOOKSTORE</h2>
+            <div>
+               
+                <img src="the Odyssey.jpg" style="margin-left: 230px;  height:300px;border-radius: 10px;">
+                <button id='aboutauthor' title="about the author">About The Author </button>
+                   <h3 style="line-height: 2;" id='disaut'>Homer  was an ancient Greek author and epic poet. 
+                    He is the reputed author of the Iliad and the Odyssey, the two epic poems that are the foundational 
+                    works of ancient Greek literature. He is regarded as one of the greatest and most influential authors 
+                    of all time.
+                </h3>
+              
+            </div>
+                <div>
+                   <h2>Name of the book - The Odyssey </h2>
+                   <h2>Author of the book:-Homer</h2>
+                   <h2>Price:₹500</h2>
+                   <button id='Order' title="Order">Order</button><br>
+                   <button id='aboutbook' title="about the book">About The Book </button>
+                  
+                   <h3 id="dis" style="line-height: 2;"> Ten years after the fall of Troy, the victorious Greek hero 
+                    Odysseus has still not returned to his native Ithaca. A band of rowdy suitors, believing Odysseus 
+                    to be dead, has overrun his palace, courting his faithful -- though weakening -- wife, Penelope, 
+                    and going through his stock of food.
+
+                    
+                   </h3>
+                   
+                </div>           
+               
+           <script>
+            $(document).ready(function(){
+                $('#disaut').hide();
+                $('#dis').hide();
+                $("#aboutauthor").click(function(){
+                    $('#disaut').show();
+  });
+  $("#aboutauthor").dblclick(function(){
+    $('#disaut').hide();
+  });
+  $("#aboutbook").click(function(){
+                    $('#dis').show();
+  });
+  $("#aboutbook").dblclick(function(){
+    $('#dis').hide();
+  });
+});
+           </script>
+    </body>
+</html>

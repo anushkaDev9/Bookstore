@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>The Catcher in the Rye </title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <style>
+           div{
+    width: 40%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 90px;
+  float: left;
+}
+#aboutbook{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+#aboutauthor{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:40% ;
+}
+#Order{
+  margin-top:0%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+        </style>
+    </head>
+    <body style='background-color: white;'>
+    <h2 style="text-align: center; font-size: 40px; padding-top: 5%;">BOOKSTORE</h2>
+            <div>
+               
+                <img src="The Catcher in the Rye by J. D. Salinger.jfif" style="margin-left: 230px;  height:300px;border-radius: 10px;">
+                <button id='aboutauthor' title="about the author">About The Author </button>
+                   <h3 style="line-height: 2;" id='disaut'>Jerome David Salinger was an American writer best known for his 1951 novel The Catcher in the Rye.
+                     Before its publication, Salinger published several short stories in Story magazine and served in World War II. 
+                     In 1948, his critically acclaimed story "A Perfect Day for Bananafish" appeared in The New Yorker, 
+                     which published much of his later work.
+                </h3>
+              
+            </div>
+                <div>
+                   <h2>Name of the book - The Catcher in the Rye </h2>
+                   <h2>Author of the book:-J. D. Salinger</h2>
+                   <h2>Price:₹500</h2>
+                   <button id='Order' title="Order">Order</button><br>
+                   <button id='aboutbook' title="about the book">About The Book </button>
+                  
+                   <h3 id="dis" style="line-height: 2;"> The narrator of The Catcher in the Rye, begins with an 
+                    authoritative statement that he does not intend the novel to serve as his life story.
+                     Currently in psychiatric care, this teenager recalls what happened to him last Christmas. 
+                     This story forms the basis for his narrative. At the beginning of his story, 
+                     Holden is a student at Pencey Prep School, irresponsible and immature. 
+                     Having been expelled for failing four out of his five classes, Holden goes to see Mr. Spencer, 
+                     his history teacher, before he leaves Pencey. Mr. Spencer advises him that he must realize that “life is a game”
+                      and one should “play it according to the rules,” but the sixteen-year-old, 
+                      who has already left four private schools, dismisses much of what Spencer says.
+
+                    
+                   </h3>
+                   
+                </div>           
+               
+           <script>
+            $(document).ready(function(){
+                $('#disaut').hide();
+                $('#dis').hide();
+                $("#aboutauthor").click(function(){
+                    $('#disaut').show();
+  });
+  $("#aboutauthor").dblclick(function(){
+    $('#disaut').hide();
+  });
+  $("#aboutbook").click(function(){
+                    $('#dis').show();
+  });
+  $("#aboutbook").dblclick(function(){
+    $('#dis').hide();
+  });
+});
+           </script>
+    </body>
+</html>

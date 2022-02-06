@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>War and Peace </title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <style>
+           div{
+    width: 40%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 90px;
+  float: left;
+}
+#aboutbook{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+#aboutauthor{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:40% ;
+}
+#Order{
+  margin-top:0%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+        </style>
+    </head>
+    <body style='background-color: white;'>
+      <h2 style="text-align: center; font-size: 40px; padding-top: 5%;">BOOKSTORE</h2>
+            <div>
+               
+                <img src="war and peace.jfif" style="margin-left: 230px;  height:300px;border-radius: 10px;">
+                <button id='aboutauthor' title="about the author">About The Author </button>
+                   <h3 style="line-height: 2;"id='disaut'>Born to an aristocratic Russian family in 1828,
+                       Tolstoy's notable works include the novels War and Peace (1869) and 
+                       Anna Karenina (1878),[8] often cited as pinnacles of realist fiction. 
+                      </h3>
+              
+            </div>
+                <div>
+                   <h2>Name of the book -War and Peace</h2>
+                   <h2>Author of the book:-Leo Tolstoy</h2>
+                   <h2>Price:₹500</h2>
+                   <button id='Order' title="Order">Order</button><br>
+                   <button id='aboutbook' title="about the book">About The Book </button>
+                  
+                   <h3 style="line-height: 2;"  id="dis"> War and Peace  is a literary work mixed with chapters on history and philosophy by the 
+                       Russian author Leo Tolstoy, first published serially, then published in its entirety in 1869. 
+                       It is regarded as one of Tolstoy's finest literary achievements and remains an internationally 
+                       praised classic of world literature.
+                    
+                     novel.
+                   </h3>
+                   
+                </div>           
+               
+           <script>
+            $(document).ready(function(){
+                $('#disaut').hide();
+                $('#dis').hide();
+                $("#aboutauthor").click(function(){
+                    $('#disaut').show();
+  });
+  $("#aboutauthor").dblclick(function(){
+    $('#disaut').hide();
+  });
+  $("#aboutbook").click(function(){
+                    $('#dis').show();
+  });
+  $("#aboutbook").dblclick(function(){
+    $('#dis').hide();
+  });
+});
+           </script>
+    </body>
+</html>

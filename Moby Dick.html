@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Moby Dick</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <style>
+           div{
+    width: 40%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 90px;
+  float: left;
+}
+#aboutbook{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+#aboutauthor{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:40% ;
+}
+#Order{
+  margin-top:0%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+        </style>
+    </head>
+    <body style='background-color: white;'>
+      <h2 style="text-align: center; font-size: 40px; padding-top: 5%;">BOOKSTORE</h2>
+            <div>
+               
+                <img src="moby dick.jpg" style="margin-left: 230px; border-radius: 10px;height:250px">
+                <button id='aboutauthor' title="about the author">About The Author </button>
+                   <h3 style="line-height: 2;" id='disaut'>Herman Melville (born Melvill;August 1, 1819 – September 28, 1891) was an American novelist, 
+                     short story writer, and poet of the American Renaissance period. Among his best-known works are Moby-Dick (1851);
+                      Typee (1846), a romanticized account of his experiences in Polynesia; and Billy Budd, Sailor, a posthumously published 
+                      novella.</h3>
+              
+            </div>
+                <div>
+                   <h2>Name of the book -Moby Dick </h2>
+                   <h2>Author of the book:-Herman Melville</h2>
+                   <h2>Price:₹390</h2>
+                   <button id='Order' title="Order">Order</button><br>
+                   <button id='aboutbook' title="about the book">About The Book </button>
+                  
+                   <h3 style="line-height: 2;" id="dis"> Moby-Dick; or, The Whale is an 1851 novel by American writer Herman Melville. 
+                     The book is the sailor Ishmael's narrative of the obsessive quest of Ahab, captain of the whaling ship Pequod, 
+                     for revenge on Moby Dick, the giant white sperm whale that on the ship's previous voyage bit off Ahab's leg at the knee. 
+                     A contribution to the literature of the American Renaissance, Moby-Dick was published to mixed reviews, was a commercial failure,
+                      and was out of print at the time of the author's death in 1891. 
+                   </h3>
+                   
+                </div>           
+               
+           <script>
+            $(document).ready(function(){
+                $('#disaut').hide();
+                $('#dis').hide();
+                $("#aboutauthor").click(function(){
+                    $('#disaut').show();
+  });
+  $("#aboutauthor").dblclick(function(){
+    $('#disaut').hide();
+  });
+  $("#aboutbook").click(function(){
+                    $('#dis').show();
+  });
+  $("#aboutbook").dblclick(function(){
+    $('#dis').hide();
+  });
+});
+           </script>
+    </body>
+</html>

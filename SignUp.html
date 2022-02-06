@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            Sign Up form 
+        </title>
+        <style>
+            div{
+                background-color: white;
+                height:500px;
+                width:40%;
+                margin-left: 30%;
+                margin-top: 7%;
+                border-radius: 10px;
+                
+            }
+            input[type=text]{
+                border-top: none;
+                border-left:none;
+                border-right:none;
+                margin-left:10% ;
+                width:80%;
+                margin-top: 5%;
+                height: 40px;
+                font-size: 30px;
+            }
+            input[type=email]{
+                border-top: none;
+                border-left:none;
+                border-right:none;
+                margin-left:10% ;
+                width:80%;
+                margin-top: 5%;
+                height: 40px;
+                font-size: 30px;
+            }
+            input[type=password]{
+                border-top: none;
+                border-left:none;
+                border-right:none;
+                margin-left:10% ;
+                width:80%;
+                margin-top: 5%;
+                height: 40px;
+                font-size: 30px;
+            }
+           label{
+            margin-left:10% ;
+               font-size: 20px;
+                margin-top: 5%;
+           }
+        input[type=submit]{
+           
+                font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid black; 
+border-radius: 4px; 
+background: black; 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 50%;
+margin-left:20% ;
+        }
+        h5{
+            margin-left:20% ; 
+        }
+            
+        </style>
+        
+    </head>
+    <body style='background-color: lightpink'>
+        <div>
+            <h1 style="text-align: center; padding-top: 5%;">Sign Up </h1>
+              <form>
+                  <input type="text" id="username" name="username" placeholder="UserName"><br>
+                  <input type="email" id="email" name="email" placeholder="EmailId"><br>
+                  <input type="password" id="password" name="password" placeholder="Create  Password"><br><br><br>
+                  <label for="gender">Choose your gender
+                      <input type="radio" name="gender">Male
+                      <input type="radio" name="gender">Female
+                      <input type="radio" name="gender">other<br><br>
+                      <input type="submit" value="Sign Up">
+                      <h5>Aldready have an account?<a href="Login.html">LogIn</a></h5>
+              </form>
+          </div>
+    </body>
+</html>

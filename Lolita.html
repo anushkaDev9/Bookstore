@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Lolita </title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <style>
+           div{
+    width: 40%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 90px;
+  float: left;
+}
+#aboutbook{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+#aboutauthor{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:40% ;
+}
+#Order{
+  margin-top:0%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+        </style>
+    </head>
+    <body style='background-color: white;'>
+      <h2 style="text-align: center; font-size: 40px; padding-top: 5%;">BOOKSTORE</h2>
+            <div>
+               
+                <img src="lolita.jpg" style="margin-left: 230px;  height:300px;border-radius: 10px;">
+                <button id='aboutauthor' title="about the author">About The Author </button>
+                   <h3 style="line-height: 2;" id='disaut'>Vladimir Nabokov, (born April 22, 1899, St. Petersburg, Russia—died July 2,
+                     1977, Montreux, Switz.), Russian-born U.S novelist and critic. Born to an aristocratic family, he had an 
+                     English-speaking governess. He published two collections of verse before leaving Russia in 1919 for the University 
+                     of Cambridge, but by 1925 he had turned to prose as his main genre. During 1919–40 he lived in England, Germany, 
+                     and France
+                </h3>
+              
+            </div>
+                <div>
+                   <h2>Name of the book - Lolita  </h2>
+                   <h2>Author of the book:-Vladimir Nabokov</h2>
+                   <h2>Price:₹500</h2>
+                   <button id='Order' title="Order">Order</button><br>
+                   <button id='aboutbook' title="about the book">About The Book </button>
+                  
+                   <h3 id="dis" style="line-height: 2;"> While looking for a place to live after securing a new 
+                    teaching position, he meets Charlotte Haze (Melanie Griffith), a pretentious and annoying woman who 
+                    seems desperately lonely and is obviously attracted to Humbert. Humbert pays her little mind until he 
+                    meets her 13-year-old daughter Lolita (Dominique Swain), the image of the girl that Humbert once loved. 
+                    Humbert moves into the Haze home as a boarder and eventually marries Charlotte in order to be closer to 
+                    Lolita. When Charlotte finds out about Humbert's attraction to her daughter, she flees the house in a rage,
+                     only to be killed in an auto accident. Without telling Lolita of her mother's fate, Humbert takes her
+                      on a cross-country auto trip, where their relationship begins to move beyond the traditional boundaries 
+                      of stepfather and step-daughter
+
+                    
+                   </h3>
+                   
+                </div>           
+               
+           <script>
+            $(document).ready(function(){
+                $('#disaut').hide();
+                $('#dis').hide();
+                $("#aboutauthor").click(function(){
+                    $('#disaut').show();
+  });
+  $("#aboutauthor").dblclick(function(){
+    $('#disaut').hide();
+  });
+  $("#aboutbook").click(function(){
+                    $('#dis').show();
+  });
+  $("#aboutbook").dblclick(function(){
+    $('#dis').hide();
+  });
+});
+           </script>
+    </body>
+</html>

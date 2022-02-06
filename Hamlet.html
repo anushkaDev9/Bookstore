@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Hamlet</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <style>
+           div{
+    width: 40%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 90px;
+  float: left;
+}
+#aboutbook{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+#aboutauthor{
+    margin-top:5%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:40% ;
+}
+#Order{
+  margin-top:0%;
+           font: inherit; 
+padding: 0.5rem 1.5rem; 
+border: 1px solid rgb(221, 87, 9); 
+border-radius: 4px; 
+background: rgb(221, 87, 9); 
+color: white; cursor: pointer; 
+margin-right: 1rem; 
+text-decoration: none; 
+width: 30%;
+margin-left:0% ;
+}
+        </style>
+    </head>
+    <body style='background-color: white;'>
+      <h2 style="text-align: center; font-size: 40px; padding-top: 5%;">BOOKSTORE</h2>
+            <div>
+               
+                <img src="hamlet.jfif" style="margin-left: 230px;  height:300px;border-radius: 10px;">
+                <button id='aboutauthor' title="about the author">About The Author </button>
+                   <h3 style="line-height: 2;" id='disaut'>William Shakespeare (bapt. 26 April 1564 – 23 April 1616)
+                       was an English playwright, poet and actor, widely regarded as the greatest writer 
+                       in the English language and the world's greatest dramatist.He is often called England's
+                        national poet and the "Bard of Avon" (or simply "the Bard").</h3>
+              
+            </div>
+                <div>
+                   <h2>Name of the book -Hamlet</h2>
+                   <h2>Author of the book:-William Shakespeare</h2>
+                   <h2>Price:₹500</h2>
+                   <button id='Order' title="Order">Order</button><br>
+                   <button id='aboutbook' title="about the book">About The Book </button>
+                  
+                   <h3 id="dis" style="line-height: 2;"> The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet , 
+                       is a tragedy written by William Shakespeare sometime between 1599 and 1601. It is Shakespeare's longest play, 
+                       with 29,551 words. Set in Denmark, the play depicts Prince Hamlet and his revenge against his uncle, Claudius,
+                       who has murdered Hamlet's father in order to seize his throne and marry Hamlet's mother.
+
+                    
+                   </h3>
+                   
+                </div>           
+               
+           <script>
+            $(document).ready(function(){
+                $('#disaut').hide();
+                $('#dis').hide();
+                $("#aboutauthor").click(function(){
+                    $('#disaut').show();
+  });
+  $("#aboutauthor").dblclick(function(){
+    $('#disaut').hide();
+  });
+  $("#aboutbook").click(function(){
+                    $('#dis').show();
+  });
+  $("#aboutbook").dblclick(function(){
+    $('#dis').hide();
+  });
+});
+           </script>
+    </body>
+</html>
